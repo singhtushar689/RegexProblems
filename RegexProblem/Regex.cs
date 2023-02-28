@@ -13,9 +13,9 @@ namespace RegexProblem
         {
             //Tushar
             string firstName = "^[A-Z]{1}[a-z]{3,}?";
-            if(Regex.IsMatch(name,firstName))
+            if (Regex.IsMatch(name, firstName))
             {
-                Console.WriteLine( "First name is matching with Regex");
+                Console.WriteLine("First name is matching with Regex");
             }
             else
             {
@@ -71,6 +71,30 @@ namespace RegexProblem
             else
             {
                 Console.WriteLine("Password is not matching with Regex");
+            }
+        }
+        public void ValidateString(string password)
+        {
+            string name = @"(?=.*[A-Z])[A-Za-z0-9]{8,}";
+            if (Regex.IsMatch((string)password, name))
+            {
+                Console.WriteLine("It is matching with Regex");
+            }
+            else
+            {
+                Console.WriteLine("It is not matching with Regex");
+            }
+        }
+        public void ValidateStringPassword(string numPassword)
+        {
+            string password = "[A-Z]{1,}[a-z0-9]";
+            if (Regex.IsMatch(numPassword, password))
+            {
+                Console.WriteLine("Numeric Password is matching with Regex");
+            }
+            else
+            {
+                Console.WriteLine("Numeric password is not matching with Regex");
             }
         }
     }
