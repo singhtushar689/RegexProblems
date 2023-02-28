@@ -12,13 +12,7 @@ namespace RegexProblem
         {
             RegexProblem regex = new RegexProblem();
             regex.ValidateFirstName("Tushar");
-            regex.ValidateLastName("Vikas");
-            regex.ValidateEmail("abc.xyz@bridgelabz.co.in");
-            regex.ValidatePhoneNumber("91 0143433425");
-            regex.ValidatePassword("Tushar123");
-            regex.ValidateString("Tushareret");
-            regex.ValidateNumericPassword("Tushar1");
-            regex.ValidateSpecialCharacter("Tushar@123");
+            regex.ValidateLastName("Singh");
             Console.ReadLine();
         }
     }
